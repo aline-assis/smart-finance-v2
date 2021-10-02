@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:smart_finance/componets/app_drawer.dart';
+import 'package:smart_finance/widgets/app_bottom_nav.dart';
+import 'package:smart_finance/widgets/app_drawer.dart';
 import 'package:smart_finance/models/banco.dart';
 import 'package:smart_finance/providers/banco_lista_provider.dart';
 
@@ -37,7 +38,9 @@ class BancoScreen extends StatelessWidget {
         child: Icon(Icons.save),
         onPressed: salvar,
       ),
-      drawer: AppDrawer(),
+      bottomNavigationBar: AppBottomNavigation(
+        selectedIndex: 1,
+      ),
     );
   }
 

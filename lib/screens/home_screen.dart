@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_finance/componets/app_drawer.dart';
+import 'package:smart_finance/widgets/app_bottom_nav.dart';
 import 'package:smart_finance/screens/fatura_screen.dart';
 // import 'package:smart_finance/screens/fatura_screen.dart';
 import 'package:smart_finance/screens/saldo_screen.dart';
@@ -7,6 +7,7 @@ import 'package:smart_finance/screens/saldo_screen.dart';
 import '../constants.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const routeName = "/home";
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
@@ -156,7 +157,9 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      drawer: AppDrawer(),
+      bottomNavigationBar: AppBottomNavigation(
+        selectedIndex: 0,
+      ),
     );
   }
 }

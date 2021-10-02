@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:smart_finance/providers/perfil_provider.dart';
+import 'package:smart_finance/widgets/app_bottom_nav.dart';
 import '/models/perfil.dart';
-import '/componets/app_drawer.dart';
+import '/widgets/app_drawer.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:provider/provider.dart';
 // import 'package:flutter_form_builder/flutter_form_builder.dart';
@@ -217,7 +218,9 @@ class _PerfilFormScreenSate extends State<PerfilFormScreen> {
         child: Icon(Icons.save),
         onPressed: _saveForm,
       ),
-      drawer: AppDrawer(),
+      bottomNavigationBar: AppBottomNavigation(
+        selectedIndex: 2,
+      ),
     );
   }
 }

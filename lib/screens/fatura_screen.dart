@@ -91,7 +91,6 @@
 //   }
 // }
 import 'package:flutter/material.dart';
-import 'package:smart_finance/componets/app_drawer.dart';
 import 'package:smart_finance/providers/fatura_mensal_provider.dart';
 import 'package:smart_finance/models/fatura.dart';
 
@@ -108,7 +107,7 @@ class FaturaMensalScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.deepPurpleAccent[200],
+        backgroundColor: Color(0xff8257e5),
         actions: [
           FaturaMensal([
             Fatura(
@@ -126,7 +125,7 @@ class FaturaMensalScreen extends StatelessWidget {
         children: [
           Container(
             width: double.infinity,
-            color: Colors.deepPurpleAccent[200],
+            color: Color(0xff8257e5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
               child: Column(
@@ -180,7 +179,7 @@ class FaturaMensalScreen extends StatelessWidget {
                   }))
         ],
       ),
-      drawer: AppDrawer(),
+      // drawer: AppDrawer(),
     );
   }
 }

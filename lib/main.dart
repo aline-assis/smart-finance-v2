@@ -41,6 +41,7 @@ class SmartFinanceApp extends StatelessWidget {
           home: authData.isAuth! ? HomeScreen() : AuthScreen(),
           // home: authData.isAuth! ? HomeScreen() : HomeScreen(),
           routes: {
+            HomeScreen.routeName: (ctx) => HomeScreen(),
             FaturaMensalScreen.routeName: (ctx) => FaturaMensalScreen(),
             SaldoScreen.routeName: (ctx) => SaldoScreen(),
             PerfilFormScreen.routeName: (ctx) => PerfilFormScreen(),
